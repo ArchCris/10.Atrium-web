@@ -1,0 +1,31 @@
+.scroll{
+    height: 60px;
+    width: 35px;
+    border-radius: 20px;
+    border: solid 3px grey;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.scroll__text{
+    position: absolute;
+    top: -40px;
+    white-space: nowrap;
+    font-weight: 400;
+    color: grey;
+}
+.scroll__ball{
+    height: 12px;
+    width: 12px;
+    border-radius: 20px;
+    margin-top: 9px;
+    background-color: grey;
+    animation: moving 1.2s infinite;
+}
+
+@keyframes moving{
+    100%{
+        transform: translateY(28px);
+        opacity: 0;
+    }
+}

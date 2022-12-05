@@ -1,0 +1,17 @@
+.burger{
+    height: 3.75rem;
+    width: 5.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 200;
+}
+.bar{
+    height: 0.8rem;
+    width: 100%;
+    background-color: $font-color;
+}
+.white{
+    background-color: white;
+}
