@@ -1,0 +1,12 @@
+.socials{
+    display: flex;
+    margin-top: 20px;
+    .socials__logo{
+        width: 80%;
+        margin-left: 20px;
+        transition: filter 600ms ease;
+    }
+    .socials__logo:hover{
+        filter: brightness(40%);
+    }
+}

@@ -11,7 +11,22 @@
     height: 0.8rem;
     width: 100%;
     background-color: $font-color;
+    z-index: 500;
+    transition: transform 600ms linear;
 }
-.white{
-    background-color: white;
+.transform__top{
+    height: 1.2rem;
+    transform-origin: center;
+    transform: translateY(20.4px) rotate(45deg) scale(75%);
+}
+.transform__middle{
+    transform: scaleY(7) ;
+    background-color: $base-violet;
+    z-index: 200;
+}
+.transform__down{
+    height: 1.2rem;
+    transform-origin: center;
+    transform:  translateY(-20.4px) rotate(-45deg) scale(75%);
+    transform-origin: center;
 }

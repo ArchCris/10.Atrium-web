@@ -57,5 +57,9 @@
     a{
         text-decoration: none;
         color: $font-color;
+        transition: text-shadow 600ms ease;
+    }
+    a:hover{
+        text-shadow: 0 0 5px rgb(75, 75, 75);
     }
 }

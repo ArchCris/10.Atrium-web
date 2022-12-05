@@ -23,10 +23,14 @@ loop()
 /*Menu effect*/
 const menu = document.querySelector(".menu")
 const burger = document.querySelector(".burger")
-const bars = document.querySelectorAll(".bar")
+const barTop = document.querySelector(".burger__top")
+const barMiddle = document.querySelector(".burger__middle")
+const barDown = document.querySelector(".burger__down")
 
 burger.addEventListener("click",()=>{
     menu.classList.toggle("menu-slide")
-    bars.forEach(bar=>{bar.classList.toggle("white")})
+    barTop.classList.toggle("transform__top")
+    barMiddle.classList.toggle("transform__middle")
+    barDown.classList.toggle("transform__down")
 })
 

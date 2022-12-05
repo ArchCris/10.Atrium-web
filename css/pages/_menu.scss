@@ -30,12 +30,23 @@
             font-weight: 600;
             font-size: 4rem;
             line-height:1;
+            transition: border 200ms ease-out;
         };
         a:hover{
-            border-bottom: solid 4px red;
+            border-bottom: solid 4px $base-violet;
         }
     }
 }
 .menu-slide{
     transform: translateX(0px);
+}
+.menu__links{
+    align-self: flex-end;
+    justify-self: flex-end;
+    color: white;
+    h1{
+        font-weight: 400;
+        text-align: end;
+    }
+
 }

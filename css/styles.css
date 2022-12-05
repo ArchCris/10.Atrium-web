@@ -139,6 +139,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .hero__connect a {
   text-decoration: none;
   color: rgb(25, 25, 25);
+  transition: text-shadow 600ms ease;
+}
+.hero__connect a:hover {
+  text-shadow: 0 0 5px rgb(75, 75, 75);
 }
 
 .menu {
@@ -175,13 +179,24 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 4rem;
   line-height: 1;
+  transition: border 200ms ease-out;
 }
 .menu__sections ul a:hover {
-  border-bottom: solid 4px red;
+  border-bottom: solid 4px rgb(219, 212, 248);
 }
 
 .menu-slide {
   transform: translateX(0px);
+}
+
+.menu__links {
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: white;
+}
+.menu__links h1 {
+  font-weight: 400;
+  text-align: end;
 }
 
 .burger {
@@ -198,10 +213,27 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 0.8rem;
   width: 100%;
   background-color: rgb(25, 25, 25);
+  z-index: 500;
+  transition: transform 600ms linear;
 }
 
-.white {
-  background-color: white;
+.transform__top {
+  height: 1.2rem;
+  transform-origin: center;
+  transform: translateY(20.4px) rotate(45deg) scale(75%);
+}
+
+.transform__middle {
+  transform: scaleY(7);
+  background-color: rgb(219, 212, 248);
+  z-index: 200;
+}
+
+.transform__down {
+  height: 1.2rem;
+  transform-origin: center;
+  transform: translateY(-20.4px) rotate(-45deg) scale(75%);
+  transform-origin: center;
 }
 
 .scroll {
@@ -228,8 +260,8 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
   margin-top: 9px;
   background-color: grey;
-  -webkit-animation: moving 1.2s infinite;
-          animation: moving 1.2s infinite;
+  -webkit-animation: moving 1.5s infinite;
+          animation: moving 1.5s infinite;
 }
 
 @-webkit-keyframes moving {
@@ -251,4 +283,17 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: url(../images/videoScreenshot.png);
   background-position: center;
   background-size: cover;
+}
+
+.socials {
+  display: flex;
+  margin-top: 20px;
+}
+.socials .socials__logo {
+  width: 80%;
+  margin-left: 20px;
+  transition: filter 600ms ease;
+}
+.socials .socials__logo:hover {
+  filter: brightness(40%);
 }/*# sourceMappingURL=styles.css.map */
