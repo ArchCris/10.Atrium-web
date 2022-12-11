@@ -1,0 +1,22 @@
+.linkArrow{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+}
+.linkArrow::after{
+    content: url(../images/assets/arrow.png);
+    margin-left: 20px;
+}
+.linkArrow:hover{
+    color: black;
+}
+.left{
+    justify-content: flex-start;
+}
+.right{
+    justify-content: flex-end;
+}

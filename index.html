@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <script defer src="app.js"></script>
+    <script defer src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <title>The Atrium</title>
 </head>
 <body>
@@ -51,8 +52,62 @@
         </div>
         <div class="hero__connect"><a href="/contact">Let´s connect</a></div>
     </div>
-    <section class="video">
-        
+    <!--Video section-->
+    <section class="videoSection">
     </section>
+    <!--Carrousel section-->
+    <section class="projectDisplay">
+        <div class="projectDisplay__data">
+            <p class="projectDisplay__brand">Permon</p>
+            <p class="projectDisplay__Job">Brand Identity<br>& Social Media design</p>
+            <p class="projectDisplay__description">We have a slight obsession with branding, so we were <br>really proud when Permon´s CEO asked us to build <br>his brand bussines.</p>
+            <a href="" class="linkArrow">View Project</a>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/01-PERMON-Behance-16.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/01-PERMON-BE-cover.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/31-PERMON-BE.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <!--Projects section-->
+    <section class="project">
+        <div class="project__grid">
+            <div class="project__card">
+                <img src="./images/01-ILUKA-Packaging.jpg" alt="" class="project__img">
+                <a href="" class="project__name">Iluka</a>
+            </div>
+            <div class="project__card">
+                <img src="./images/Lulo-Branding-BE-17.jpg" alt="" class="project__img">
+                <a href="" class="project__name">LULO</a>
+            </div>
+            <div class="project__card">
+                <img src="./images/jd_campo_torta_mockup.jpg" alt="" class="project__img">
+                <a href="" class="project__name">John Deere</a>
+            </div>
+            <div class="project__card">
+                <img src="./images/00-8FX-BE.jpg" alt="" class="project__img">
+                <a href="" class="project__name">8FX</a>
+            </div>
+        </div>
+        <a href="" class="linkArrow right">View All Projects</a>
+
+    </section>
+    
 </body>
 </html>

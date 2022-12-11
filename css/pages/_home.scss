@@ -1,7 +1,50 @@
-.video{
+.videoSection{
     height: 100vh;
     width: 100vw;
     background-image: url(../images/videoScreenshot.png);
     background-position:center;
     background-size:cover;
+}
+.projectDisplay{
+    width: 100%;
+    padding: 18.125rem 10.875rem 16.5rem 10.875rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+}
+.projectDisplay__brand{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.projectDisplay__Job{
+    font-weight: 600;
+    font-size: 2.625rem;
+}
+.projectDisplay__description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.carousel{
+    width: 50%;
+}
+.project{
+    width: 100%;
+    height: 100vh;
+    padding: 0rem 10.875rem 0rem 10.875rem;
+}
+.project__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10rem;
+    margin-bottom: 6rem;
+}
+.project__img{
+    margin-bottom: 1.5rem;
+}
+.project__name{
+    line-height: 1;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
